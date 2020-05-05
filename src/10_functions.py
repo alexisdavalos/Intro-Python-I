@@ -8,5 +8,12 @@ num = int(num)
 
 # Print out "Even!" if the number is even. Otherwise print "Odd"
 
-# YOUR CODE HERE
 
+def is_it_even(n):
+    if (n % 2 == 0):
+        print('Even!')
+    else:
+        print('Odd!')
+
+
+is_it_even(num)
