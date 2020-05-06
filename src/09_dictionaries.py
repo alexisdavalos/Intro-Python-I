@@ -53,10 +53,9 @@ print(f'updated: {waypoints}')
 
 waypoints[0].update({'lat': 43, 'long': -130, 'name': 'not a real place'})
 print(f'updated: {waypoints}')
-# YOUR CODE HERE
 
 # Write a loop that prints out all the field values for all the waypoints
-
-for (i) in range(len(waypoints)):
-    for (k, v) in waypoints[i].items():
+# do not need to do in range(len(waypoints))
+for (i) in waypoints:
+    for (k, v) in i.items():
         print(f'key: {k}\nvalue: {v}')
