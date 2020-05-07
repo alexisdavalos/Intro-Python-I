@@ -46,19 +46,21 @@ if len(sys.argv) == 1:
     month = datetime.today().month
     year = datetime.today().year
     c = calendar.month(year, month)
-    print(c)
+
 # The User provides only 1 additional argument
 elif len(sys.argv) == 2 and 0 < int(sys.argv[1]) < 13:
     month = int(sys.argv[1])
     year = datetime.today().year
     c = calendar.month(year, month)
-    print(c)
+
 # The User provides both required arguments
 elif len(sys.argv) == 3 and 0 < int(sys.argv[1]) < 13:
     month = int(sys.argv[1])
     year = int(sys.argv[2])
     c = calendar.month(year, month)
-    print(c)
+
 # The User provided invalid input
 else:
     print('Please Follow This Format: 14_cal.py [month(1-12)] [year]')
+
+print(c)
